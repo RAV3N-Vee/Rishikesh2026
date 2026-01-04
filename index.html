@@ -48,7 +48,7 @@
     }
 
     /* HEADER */
-    .header {
+    .header, .countdown-timer {
       background: radial-gradient(circle at top left, #ffe0c7 0%, #ffd1b8 30%, #ffb999 60%, #fff0e3 100%);
       color: #3b2b28;
       padding: 44px 26px 30px 26px;
@@ -56,6 +56,29 @@
       position: relative;
       overflow: hidden;
     }
+	
+	#countdown-card {
+  display: inline-flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 253, 248, 0.9);
+      padding: 10px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 182, 139, 0.6);
+      font-size: 0.9rem;
+      font-weight: 600;
+}
+
+.header-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+  flex-wrap: wrap; 
+}
 
     .header::before {
       content: "✨";
@@ -441,6 +464,8 @@
       font-size: 0.8rem;
       color: #7b5941;
     }
+	
+	
 
     /* RESPONSIVE */
     @media (max-width: 768px) {
@@ -465,7 +490,7 @@
         padding: 8px 14px;
       }
 
-      .content {
+	 .content {
         padding: 20px 14px 22px;
       }
 
@@ -525,6 +550,15 @@
         font-size: 1.1rem;
       }
     }
+	
+	.countdown-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+
+
   </style>
 </head>
 <body>
@@ -533,11 +567,43 @@
     <header class="header">
       <h1>Rishikesh Expedition 2026</h1>
       <p>A calm, cozy 3-day riverside escape to the Yoga Capital</p>
-      <div class="trip-dates">
-        <strong>📅 February 15–17, 2026</strong>
-        <span>· First of 2026</span>
-      </div>
-    </header>
+      <div class="header-meta">
+  <div class="trip-dates">
+    <strong>📅 February 15–17, 2026</strong>
+    <span>· First of 2026</span>
+  </div>
+
+  <div id="countdown-card">
+    <span id="countdown">Loading...</span>
+  </div>
+</div>
+
+<script>
+const target = new Date("2026-02-15T00:00:00").getTime();
+
+function tick() {
+  const now = Date.now();
+  const diff = target - now;
+  
+  if (diff <= 0) {
+    document.getElementById("countdown").textContent = "🚀 TRIP TIME!";
+    return;
+  }
+  
+  const d = Math.floor(diff / 86400000);
+  const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000) / 60000);
+  const s = Math.floor((diff % 60000) / 1000);
+  
+  document.getElementById("countdown").textContent = 
+    `${d}d ${h.toString().padStart(2,"0")}h ${m.toString().padStart(2,"0")}m ${s.toString().padStart(2,"0")}s`;
+}
+
+tick();
+setInterval(tick, 1000);
+</script>
+</header>
+	
 
     <!-- CONTENT -->
     <main class="content">
