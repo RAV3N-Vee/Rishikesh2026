@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="https://i.ibb.co/YTqZB4G0/RISH2.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishikesh Expedition 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #ffe4d6 0%, #fff7ec 40%, #e4ffe9 100%);
+      --card-bg: #fffdf8;
+      --accent-peach: #ffb999;
+      --accent-peach-deep: #ff9466;
+      --accent-cream: #fff7ec;
+      --accent-mint: #b9f2c8;
+      --accent-mint-deep: #65c588;
+      --accent-orange: #ffb347;
+      --accent-text: #3c3c3c;
+      --muted-text: #6c6c6c;
+      --soft-border: #ffe0c7;
+      --shadow-soft: 0 18px 50px rgba(255, 148, 102, 0.15);
+      --shadow-soft-green: 0 18px 50px rgba(101, 197, 136, 0.16);
+      --radius-lg: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: var(--bg-gradient);
+      min-height: 100vh;
+      padding: 16px;
+      color: var(--accent-text);
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto 40px auto;
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+    }
+
+    /* HEADER */
+    .header {
+      background: radial-gradient(circle at top left, #ffe0c7 0%, #ffd1b8 30%, #ffb999 60%, #fff0e3 100%);
+      color: #3b2b28;
+      padding: 44px 26px 30px 26px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: "✨";
+      position: absolute;
+      top: -20px;
+      right: 20px;
+      font-size: 80px;
+      opacity: 0.15;
+    }
+
+    .header h1 {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .header p {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: 12px;
+    }
+
+    .trip-dates {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 253, 248, 0.9);
+      padding: 10px 20px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 182, 139, 0.6);
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .trip-dates strong {
+      font-weight: 700;
+      color: #c25a2b;
+    }
+
+    /* CONTENT WRAPPER */
+    .content {
+      padding: 28px 22px 32px;
+    }
+
+    h2 {
+      font-family: "Space Grotesk", sans-serif;
+      color: #d66b3d;
+      font-size: 1.45rem;
+      margin: 26px 0 12px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2 span.tag {
+      font-size: 0.9rem;
+      background: rgba(255, 193, 158, 0.35);
+      padding: 4px 10px;
+      border-radius: 999px;
+      color: #b65528;
+    }
+
+    h3 {
+      font-family: "Space Grotesk", sans-serif;
+      color: #ff8d57;
+      font-size: 1.15rem;
+      margin: 20px 0 10px;
+      font-weight: 700;
+    }
+
+    h4 {
+      color: #ff8d57;
+      font-size: 1.02rem;
+      margin: 12px 0 6px;
+      font-weight: 600;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 0.94rem;
+      color: var(--muted-text);
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: #ff8d57;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* OVERVIEW */
+    .overview-box {
+      margin: 14px 0 20px;
+      padding: 16px 14px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #fff4ea 0%, #ffe8df 45%, #e9ffe9 100%);
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .overview-item {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      padding: 10px 8px;
+      text-align: center;
+      border: 1px solid rgba(255, 199, 162, 0.7);
+    }
+
+    .overview-item strong {
+      display: block;
+      font-size: 0.8rem;
+      color: #b75c2e;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .overview-item span {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 800;
+      font-family: "Space Grotesk", sans-serif;
+      color: #2d3c32;
+    }
+
+    /* IMAGE GRID */
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0 6px;
+    }
+
+    .image-item {
+      border-radius: 18px;
+      overflow: hidden;
+      background: #fef7f1;
+      box-shadow: 0 10px 30px rgba(255, 153, 109, 0.18);
+    }
+
+    .image-item img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .image-caption {
+      padding: 8px 10px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #5a4339;
+      background: linear-gradient(90deg, #ffe3d3, #fff7ec);
+    }
+
+    .image-caption a {
+      color: #c4602d;
+    }
+
+    /* TIPS BOX */
+    .tips-box {
+      background: linear-gradient(135deg, #fff7ec 0%, #ffe9d7 40%, #edffe9 100%);
+      border-left: 4px solid #ffb347;
+      padding: 12px 14px;
+      border-radius: 14px;
+      margin: 14px 0;
+    }
+
+    .tips-box h4 {
+      margin-top: 0;
+      color: #d26c33;
+      font-size: 1rem;
+    }
+
+    .tips-box p {
+      margin: 4px 0;
+      font-size: 0.9rem;
+    }
+
+    /* CAFÉ CARDS */
+    .cafe-card {
+      background: #fffdf8;
+      border-radius: 16px;
+      border: 1px solid var(--soft-border);
+      padding: 12px 12px 12px;
+      margin: 10px 0;
+      box-shadow: 0 8px 24px rgba(255, 178, 133, 0.12);
+    }
+
+    .cafe-name {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: #f0783e;
+      margin-bottom: 6px;
+    }
+
+    .cafe-details {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin: 8px 0 6px;
+    }
+
+    .cafe-detail {
+      font-size: 0.82rem;
+    }
+
+    .cafe-label {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      color: #c16034;
+      letter-spacing: 0.04em;
+    }
+
+    .cafe-value {
+      display: block;
+      color: var(--accent-text);
+      font-weight: 500;
+      margin-top: 2px;
+    }
+
+    .google-maps-link {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.8rem;
+      background: linear-gradient(135deg, #ffb999, #b9f2c8);
+      color: #3a3126;
+      padding: 6px 10px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .google-maps-link:hover {
+      filter: brightness(0.97);
+      text-decoration: none;
+    }
+
+    /* DAY CARDS + TABLES */
+    .day-card {
+      background: #fffdf8;
+      border-radius: 18px;
+      border: 1px solid var(--soft-border);
+      margin: 16px 0;
+      overflow: hidden;
+      box-shadow: 0 12px 36px rgba(255, 184, 123, 0.18);
+    }
+
+    .day-header {
+      background: linear-gradient(90deg, #ffcfb1, #ffe3d3);
+      padding: 10px 14px;
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      font-size: 1.02rem;
+      color: #5f3921;
+    }
+
+    .itinerary-table,
+    .cost-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+
+    .itinerary-table th,
+    .cost-table th {
+      background: #fff2e6;
+      padding: 8px;
+      text-align: left;
+      color: #b85e30;
+      font-weight: 700;
+      border-bottom: 1px solid #ffe0c7;
+    }
+
+    .itinerary-table td,
+    .cost-table td {
+      padding: 7px 8px;
+      border-bottom: 1px solid #ffe9d9;
+      color: #5a4a3c;
+      vertical-align: top;
+    }
+
+    .time-col {
+      font-family: "Space Grotesk", sans-serif;
+      font-weight: 700;
+      color: #f0783e;
+      width: 78px;
+    }
+
+    .activity-col {
+      font-weight: 600;
+      color: #cf5d24;
+      width: 110px;
+    }
+
+    .cost-amount {
+      text-align: right;
+      font-weight: 700;
+      color: #3b7b4e;
+    }
+
+    .cost-total-row {
+      background: #fef2e8;
+      font-weight: 700;
+    }
+
+    /* CHECKLIST */
+    .checklist {
+      list-style: none;
+      margin: 8px 0 6px;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 6px;
+      font-size: 0.9rem;
+      color: var(--accent-text);
+    }
+
+    .checklist li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #65c588;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
+    /* SUMMARY */
+    .summary-box {
+      margin: 20px 0 10px;
+      padding: 16px 14px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffe3d3, #ffeedd 45%, #e7ffe8 100%);
+      box-shadow: var(--shadow-soft-green);
+      text-align: center;
+    }
+
+    .summary-box h3 {
+      margin: 0 0 4px;
+      color: #5b3a1f;
+      font-size: 1.02rem;
+    }
+
+    .price-highlight {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #3f7f57;
+      margin: 8px 0;
+    }
+
+    .group-total {
+      font-size: 0.9rem;
+      color: #69503f;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #fff0e3;
+      text-align: center;
+      padding: 14px 18px 18px;
+      border-top: 1px solid #ffd8bf;
+    }
+
+    .footer p {
+      margin: 4px 0;
+      font-size: 0.8rem;
+      color: #7b5941;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      body {
+        padding: 8px;
+      }
+
+      .container {
+        border-radius: 18px;
+      }
+
+      .header {
+        padding: 30px 16px 24px;
+      }
+
+      .header h1 {
+        font-size: 1.9rem;
+      }
+
+      .trip-dates {
+        font-size: 0.8rem;
+        padding: 8px 14px;
+      }
+
+      .content {
+        padding: 20px 14px 22px;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      h3 {
+        font-size: 1.02rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .overview-box {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 12px 10px;
+      }
+
+      .image-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .image-item img {
+        height: 190px;
+      }
+
+      .cafe-details {
+        grid-template-columns: 1fr;
+      }
+
+      .itinerary-table,
+      .cost-table {
+        font-size: 0.78rem;
+      }
+
+      .time-col {
+        width: 64px;
+      }
+
+      .activity-col {
+        width: 90px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .image-item img {
+        height: 180px;
+      }
+
+      .price-highlight {
+        font-size: 1.8rem;
+      }
+
+      .overview-item span {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header class="header">
+      <h1>Rishikesh Expedition 2026</h1>
+      <p>A calm, cozy 3-day riverside escape to the Yoga Capital</p>
+      <div class="trip-dates">
+        <strong>📅 February 15–17, 2026</strong>
+        <span>· First of 2026</span>
+      </div>
+    </header>
+
+    <!-- CONTENT -->
+    <main class="content">
+      <!-- OVERVIEW -->
+      <section>
+        <h2>🎯 Trip Overview <span class="tag">Soft & Slow</span></h2>
+        <div class="overview-box">
+          <div class="overview-item">
+            <strong>Duration</strong>
+            <span>3 Days</span>
+          </div>
+          <div class="overview-item">
+            <strong>Group Size</strong>
+            <span>4 People</span>
+          </div>
+          <div class="overview-item">
+            <strong>Stay</strong>
+            <span>The Hosteller</span>
+          </div>
+          <div class="overview-item">
+            <strong>Budget Per Head</strong>
+            <span>₹5,345</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- IMAGES -->
+      <section>
+        <h2>✨ Visual Moodboard</h2>
+        <div class="image-grid">
+          <div class="image-item">
+            <img src="https://i.ibb.co/M53MYyzJ/1.jpg?auto=compress&cs=tinysrgb&w=1200" alt="Ganga Aarti at Rishikesh" />
+            <div class="image-caption">
+              🕯️ Soft evening Ganga Aarti vibes –
+              <a href="https://en.wikipedia.org/wiki/Ganga_Aarti" target="_blank" rel="noopener noreferrer">Know more</a>
+            </div>
+          </div>
+          <div class="image-item">
+            <img src="https://i.ibb.co/99kq5HcV/2.jpg?auto=compress&cs=tinysrgb&w=1200" alt="Bridge over Ganga" />
+            <div class="image-caption">
+              🌉 Calm bridge walks over the Ganga –
+              <a href="https://maps.google.com/?q=Lakshman+Jhula+Rishikesh" target="_blank" rel="noopener noreferrer">Open in Maps</a>
+            </div>
+          </div>
+          <div class="image-item">
+            <img src="https://i.ibb.co/NdPHq2bZ/3.jpg?auto=compress&cs=tinysrgb&w=1200" alt="Art and graffiti at ashram" />
+            <div class="image-caption">
+              🎨 Beatles Ashram style graffiti and art –
+              <a href="https://en.wikipedia.org/wiki/Beatles_Ashram" target="_blank" rel="noopener noreferrer">Read story</a>
+            </div>
+          </div>
+          <div class="image-item">
+            <img src="https://i.ibb.co/wFtZQJf5/4.jpg?auto=compress&cs=tinysrgb&w=1200" alt="Riverside café in mountains" />
+            <div class="image-caption">
+              ☕ Slow mornings in riverside cafés –
+              <a href="https://maps.google.com/?q=Little+Buddha+Cafe+Rishikesh" target="_blank" rel="noopener noreferrer">Little Buddha Cafe</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STAY -->
+      <section>
+        <h2>🏨 Stay: The Hosteller Rishikesh</h2>
+        <p>Base is a calm backpacker-style hostel in <strong>Upper Tapovan</strong>, away from main-road chaos but close enough to walk to the bridges and cafés.</p>
+        <p>Social common areas, rooftop corners, and an in-house café make it an easy plug-and-play base after wedding exhaustion.</p>
+        <p>
+          🔗 Official site:
+          <a href="https://www.thehosteller.com/hostels/the-hosteller-rishikesh-upper-tapovan/" target="_blank" rel="noopener noreferrer">The Hosteller</a>
+        </p>
+
+        <h3>✅ Why this works for the group</h3>
+        <ul class="checklist">
+          <li>Backpacker vibe but clean, cozy, and structured</li>
+          <li>Rooftop + greenery = gentle morning and late-night hangouts</li>
+          <li>~15 minutes walk to Lakshman Jhula; Ram Jhula slightly further</li>
+          <li>WiFi, hot water, AC dorms; paid parking close by</li>
+        </ul>
+
+        <h3>⚠️ Soft Logistics</h3>
+        <div class="tips-box">
+          <h4>📍 Things to remember</h4>
+          <p><strong>Uphill stretch:</strong> Last ~400–450m is an uphill walk from the main road; comfortable shoes help.</p>
+          <p><strong>Food policy:</strong> Outside food typically discouraged inside; cafés nearby and in-house kitchen cover most cravings.</p>
+          <p><strong>Bookings:</strong> February fills early; locking beds in advance keeps things stress-free.</p>
+        </div>
+      </section>
+
+      <!-- CAFES -->
+      <section>
+        <h2>☕ Café & Food Circuit</h2>
+        <p>Most of the time is built around slow café sessions, river views, and light exploring—no rushing, just gentle movement.</p>
+
+        <h3>🌟 Handpicked cafés (all clickable)</h3>
+
+        <div class="cafe-card">
+          <div class="cafe-name">☕ The Arches Cafe & Bakery</div>
+          <div class="cafe-details">
+            <div class="cafe-detail">
+              <span class="cafe-label">Vibe</span>
+              <span class="cafe-value">Soft decor, aesthetic corners</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Try</span>
+              <span class="cafe-value">Vegan pizzas, fresh juices</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Approx</span>
+              <span class="cafe-value">₹250–350 / head</span>
+            </div>
+          </div>
+          <a class="google-maps-link" href="https://maps.google.com/?q=The+Arches+Cafe+Rishikesh" target="_blank" rel="noopener noreferrer">📍 Open in Google Maps</a>
+        </div>
+
+        <div class="cafe-card">
+          <div class="cafe-name">🌿 Ramana's Organic Cafe</div>
+          <div class="cafe-details">
+            <div class="cafe-detail">
+              <span class="cafe-label">Vibe</span>
+              <span class="cafe-value">Green, earthy, calm</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Try</span>
+              <span class="cafe-value">Organic bowls, smoothies</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Approx</span>
+              <span class="cafe-value">₹200–300 / head</span>
+            </div>
+          </div>
+          <a class="google-maps-link" href="https://maps.google.com/?q=Ramana's+Organic+Cafe+Rishikesh" target="_blank" rel="noopener noreferrer">📍 Open in Google Maps</a>
+        </div>
+
+        <div class="cafe-card">
+          <div class="cafe-name">🫖 Ira's Kitchen & Tea Room</div>
+          <div class="cafe-details">
+            <div class="cafe-detail">
+              <span class="cafe-label">Vibe</span>
+              <span class="cafe-value">Warm, intimate, slow</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Try</span>
+              <span class="cafe-value">Special teas, bakes</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Approx</span>
+              <span class="cafe-value">₹180–280 / head</span>
+            </div>
+          </div>
+          <a class="google-maps-link" href="https://maps.google.com/?q=Ira's+Kitchen+Tea+Room+Rishikesh" target="_blank" rel="noopener noreferrer">📍 Open in Google Maps</a>
+        </div>
+
+        <div class="cafe-card">
+          <div class="cafe-name">🧘 Little Buddha Cafe</div>
+          <div class="cafe-details">
+            <div class="cafe-detail">
+              <span class="cafe-label">Vibe</span>
+              <span class="cafe-value">Classic riverside hangout</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Try</span>
+              <span class="cafe-value">Coffee + light mains</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Approx</span>
+              <span class="cafe-value">₹200–300 / head</span>
+            </div>
+          </div>
+          <a class="google-maps-link" href="https://maps.google.com/?q=Little+Buddha+Cafe+Rishikesh" target="_blank" rel="noopener noreferrer">📍 Open in Google Maps</a>
+        </div>
+
+        <div class="cafe-card">
+          <div class="cafe-name">🌅 Ganga View Cafe</div>
+          <div class="cafe-details">
+            <div class="cafe-detail">
+              <span class="cafe-label">Vibe</span>
+              <span class="cafe-value">Golden-hour sunsets</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Try</span>
+              <span class="cafe-value">Coffee + sunset snack</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Approx</span>
+              <span class="cafe-value">₹150–250 / head</span>
+            </div>
+          </div>
+          <a class="google-maps-link" href="https://maps.google.com/?q=Ganga+View+Cafe+Rishikesh" target="_blank" rel="noopener noreferrer">📍 Open in Google Maps</a>
+        </div>
+
+        <div class="cafe-card">
+          <div class="cafe-name">🍕 Bistro Nirvana</div>
+          <div class="cafe-details">
+            <div class="cafe-detail">
+              <span class="cafe-label">Vibe</span>
+              <span class="cafe-value">Modern, relaxed</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Try</span>
+              <span class="cafe-value">Pizzas, wraps, pastas</span>
+            </div>
+            <div class="cafe-detail">
+              <span class="cafe-label">Approx</span>
+              <span class="cafe-value">₹200–350 / head</span>
+            </div>
+          </div>
+          <a class="google-maps-link" href="https://maps.google.com/?q=Bistro+Nirvana+Rishikesh" target="_blank" rel="noopener noreferrer">📍 Open in Google Maps</a>
+        </div>
+      </section>
+
+      <!-- ACTIVITIES -->
+      <section>
+        <h2>🗺️ Core Experiences</h2>
+
+        <h3>🕯️ Ganga Aarti at Triveni Ghat</h3>
+        <p><strong>Time:</strong> Roughly 5:30–6:30 PM in February (arrive early for a calm spot).</p>
+        <p><strong>Why:</strong> Soft chants, lit diyas, floating lamps, and golden reflections on the river—probably the emotional core of the trip.</p>
+        <p><strong>Cost:</strong> Free; optional small donation.</p>
+        <p>
+          🔗
+          <a href="https://maps.google.com/?q=Triveni+Ghat+Rishikesh" target="_blank" rel="noopener noreferrer">Triveni Ghat on Google Maps</a>
+        </p>
+
+        <h3>🌉 Lakshman Jhula & Ram Jhula</h3>
+        <p><strong>Why:</strong> Iconic suspension bridges with gentle river wind and views of the hills; great for slow walks and photos.</p>
+        <p><strong>Time needed:</strong> 1–2 hours including pauses, shops, and photos.</p>
+        <p>
+          🔗
+          <a href="https://maps.google.com/?q=Lakshman+Jhula+Rishikesh" target="_blank" rel="noopener noreferrer">Lakshman Jhula – Maps</a>
+          &nbsp;|&nbsp;
+          <a href="https://maps.google.com/?q=Ram+Jhula+Rishikesh" target="_blank" rel="noopener noreferrer">Ram Jhula – Maps</a>
+        </p>
+
+        <h3>🎨 Beatles Ashram (Chaurasi Kutia)</h3>
+        <p><strong>Why:</strong> Old meditation site filled with graffiti, quotes, and Beatles-era energy; great for relaxed wandering and photos.</p>
+        <p><strong>Entry:</strong> Around ₹150 per person; allow 1–1.5 hours inside.</p>
+        <p>
+          🔗
+          <a href="https://maps.google.com/?q=Beatles+Ashram+Rishikesh" target="_blank" rel="noopener noreferrer">Beatles Ashram – Maps</a>
+        </p>
+      </section>
+
+      <!-- DAY BY DAY -->
+      <section>
+        <h2>📅 Gentle Day-by-Day Flow</h2>
+
+        <!-- Day 1 -->
+        <div class="day-card">
+          <div class="day-header">☀️ Day 1 — Sunday, Feb 15</div>
+          <table class="itinerary-table">
+            <tr>
+              <th>Time</th>
+              <th>Plan</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td class="time-col">6:00</td>
+              <td class="activity-col">Drive out</td>
+              <td>Start from Noida; easy morning highway drive, tea break on the way.</td>
+            </tr>
+            <tr>
+              <td class="time-col">10:00</td>
+              <td class="activity-col">Arrive</td>
+              <td>Reach Rishikesh, drive towards Upper Tapovan and get a feel of the hills.</td>
+            </tr>
+            <tr>
+              <td class="time-col">10:30–11:30</td>
+              <td class="activity-col">Check-in</td>
+              <td>Settle at The Hosteller, showers, unpack, and a short breather.</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:00</td>
+              <td class="activity-col">Lunch</td>
+              <td>First café meal (Arches / Ramana's) to set the food tone.</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00–15:00</td>
+              <td class="activity-col">Rest</td>
+              <td>Nap, rooftop lazing, reading, or quiet hostel corners.</td>
+            </tr>
+            <tr>
+              <td class="time-col">15:30–17:00</td>
+              <td class="activity-col">Bridge walk</td>
+              <td>Slow walk to Lakshman Jhula, cross the bridge, explore both sides.</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:00–18:30</td>
+              <td class="activity-col">Ganga Aarti</td>
+              <td>Reach Triveni Ghat in time, find a calm spot, soak in the ritual.</td>
+            </tr>
+            <tr>
+              <td class="time-col">19:00</td>
+              <td class="activity-col">Dinner</td>
+              <td>Pick a nearby café for an easy, unhurried dinner.</td>
+            </tr>
+            <tr>
+              <td class="time-col">20:30–22:00</td>
+              <td class="activity-col">Wind down</td>
+              <td>Rooftop or common area chats, maybe journaling or music.</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="day-card">
+          <div class="day-header">🌄 Day 2 — Monday, Feb 16</div>
+          <table class="itinerary-table">
+            <tr>
+              <th>Time</th>
+              <th>Plan</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td class="time-col">7:00</td>
+              <td class="activity-col">Optional sunrise</td>
+              <td>Light walk to a nearby ghat; sit quietly by the water.</td>
+            </tr>
+            <tr>
+              <td class="time-col">8:00</td>
+              <td class="activity-col">Breakfast</td>
+              <td>Soft breakfast crawl: Moktan / Sattvikta / Ira's if open.</td>
+            </tr>
+            <tr>
+              <td class="time-col">10:00–11:30</td>
+              <td class="activity-col">Beatles Ashram</td>
+              <td>Slow wandering, photos with graffiti walls, quiet nooks.</td>
+            </tr>
+            <tr>
+              <td class="time-col">12:00</td>
+              <td class="activity-col">By the river</td>
+              <td>Find a calm spot near Lakshman Jhula; feet in the water if comfortable.</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00</td>
+              <td class="activity-col">Lunch</td>
+              <td>Café or street food depending on energy.</td>
+            </tr>
+            <tr>
+              <td class="time-col">14:30–16:30</td>
+              <td class="activity-col">Market</td>
+              <td>Easy browsing for incense, rudraksha, small souvenirs.</td>
+            </tr>
+            <tr>
+              <td class="time-col">17:00</td>
+              <td class="activity-col">Sunset café</td>
+              <td>Ganga View Cafe / Little Buddha for golden hour.</td>
+            </tr>
+            <tr>
+              <td class="time-col">19:00</td>
+              <td class="activity-col">Dinner</td>
+              <td>Ira's, Harry's, or another favorite from Day 1.</td>
+            </tr>
+            <tr>
+              <td class="time-col">20:30–22:30</td>
+              <td class="activity-col">Hostel time</td>
+              <td>Board games, conversations, or simply early night.</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Day 3 -->
+        <div class="day-card">
+          <div class="day-header">🌙 Day 3 — Tuesday, Feb 17</div>
+          <table class="itinerary-table">
+            <tr>
+              <th>Time</th>
+              <th>Plan</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <td class="time-col">8:00</td>
+              <td class="activity-col">Breakfast</td>
+              <td>Final chill breakfast at a favorite spot or hostel café.</td>
+            </tr>
+            <tr>
+              <td class="time-col">9:30</td>
+              <td class="activity-col">Pack & check-out</td>
+              <td>Easy check-out, settle bills, say goodbye to the hostel crew.</td>
+            </tr>
+            <tr>
+              <td class="time-col">10:30</td>
+              <td class="activity-col">Drive back</td>
+              <td>Head back towards Delhi with a gentle playlist.</td>
+            </tr>
+            <tr>
+              <td class="time-col">13:00–14:00</td>
+              <td class="activity-col">Brunch break</td>
+              <td>Highway stop / Meerut side; nothing rushed.</td>
+            </tr>
+            <tr>
+              <td class="time-col">15:30–16:00</td>
+              <td class="activity-col">Reach home</td>
+              <td>Unwind, showers, and deep, satisfied sleep.</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- COSTS -->
+      <section>
+        <h2>💰 Calm Budget Snapshot</h2>
+
+        <h3>🏨 Stay (per person)</h3>
+        <table class="cost-table">
+          <tr>
+            <th>Item</th>
+            <th>Rate</th>
+            <th>Nights</th>
+            <th class="cost-amount">Subtotal</th>
+          </tr>
+          <tr>
+            <td>Dorm bed at The Hosteller, Upper Tapovan</td>
+            <td>₹800 / night</td>
+            <td>2</td>
+            <td class="cost-amount">₹1,600</td>
+          </tr>
+        </table>
+
+        <h3>🚗 Travel (split by 4)</h3>
+        <table class="cost-table">
+          <tr>
+            <th>Item</th>
+            <th class="cost-amount">Per person</th>
+          </tr>
+          <tr>
+            <td>Fuel (Noida ↔ Rishikesh, Ertiga)</td>
+            <td class="cost-amount">₹620</td>
+          </tr>
+          <tr>
+            <td>Tolls + parking</td>
+            <td class="cost-amount">₹225</td>
+          </tr>
+          <tr class="cost-total-row">
+            <td>Total transport</td>
+            <td class="cost-amount">₹845</td>
+          </tr>
+        </table>
+
+        <h3>☕ Food & cafés (3 days)</h3>
+        <table class="cost-table">
+          <tr>
+            <th>Meal type</th>
+            <th>Per day</th>
+            <th>Days</th>
+            <th class="cost-amount">Subtotal</th>
+          </tr>
+          <tr>
+            <td>Main café meals (breakfast + lunch + dinner)</td>
+            <td>₹800</td>
+            <td>3</td>
+            <td class="cost-amount">₹2,400</td>
+          </tr>
+          <tr>
+            <td>Coffee / snacks / dessert buffer</td>
+            <td>₹100</td>
+            <td>3</td>
+            <td class="cost-amount">₹300</td>
+          </tr>
+          <tr class="cost-total-row">
+            <td colspan="2">Food & cafés total</td>
+            <td></td>
+            <td class="cost-amount">₹2,700</td>
+          </tr>
+        </table>
+
+        <h3>🎨 Experiences & extras</h3>
+        <table class="cost-table">
+          <tr>
+            <th>Item</th>
+            <th class="cost-amount">Approx</th>
+          </tr>
+          <tr>
+            <td>Beatles Ashram entry</td>
+            <td class="cost-amount">₹150</td>
+          </tr>
+          <tr>
+            <td>Local autos / micro-movement</td>
+            <td class="cost-amount">₹200</td>
+          </tr>
+          <tr>
+            <td>Misc tips / tiny purchases</td>
+            <td class="cost-amount">₹150</td>
+          </tr>
+          <tr class="cost-total-row">
+            <td>Experiences + extras</td>
+            <td class="cost-amount">₹500</td>
+          </tr>
+        </table>
+
+        <div class="summary-box">
+          <h3>Final soft number (per person)</h3>
+          <div class="price-highlight">₹5,645</div>
+          <p class="group-total">Stay ₹1,600 + Travel ₹845 + Food ~₹2,700 + Experiences ₹500.</p>
+          <p class="group-total">For 4 people, the total group spend is ~₹22,580.</p>
+        </div>
+      </section>
+
+      <!-- CHECKLIST -->
+      <section>
+        <h2>✅ Pre-Trip Calm Checklist</h2>
+
+        <h3>📋 Book before you go</h3>
+        <ul class="checklist">
+          <li>Dorm beds at The Hosteller for Feb 15–17.</li>
+          <li>Car (Ertiga / equivalent) blocked for all 3 days.</li>
+          <li>Rough parking plan near Upper Tapovan.</li>
+          <li>Share this page / PDF with the full group.</li>
+        </ul>
+
+        <h3>🎒 Pack light but smart</h3>
+        <ul class="checklist">
+          <li>Comfortable walking shoes (for uphill + bridges).</li>
+          <li>Light layer / hoodie for mornings and evenings.</li>
+          <li>Sunscreen, cap, sunglasses, lip balm.</li>
+          <li>Swimwear / quick-dry clothes for riverside sitting.</li>
+          <li>Phone charger + power bank.</li>
+          <li>₹2,000–3,000 cash for autos, tips, and small shops.</li>
+          <li>Reusable bottle + small day backpack.</li>
+        </ul>
+
+        <h3>🚗 Before leaving Delhi</h3>
+        <ul class="checklist">
+          <li>Fuel up, check tyre pressure, and basic fluids.</li>
+          <li>Keep offline Maps saved for Rishikesh area.</li>
+          <li>Share live location / route with one trusted person.</li>
+          <li>Download calm playlists and podcasts beforehand.</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p><strong>Rishikesh Expedition · February 15–17, 2026</strong></p>
+      <p>Designed for slow mornings, soft evenings, and low-stress movement.</p>
+      <p>Share this file or convert to PDF and send directly to the group.</p>
+    </footer>
+  </div>
+</body>
+</html>
